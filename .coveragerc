@@ -1,0 +1,13 @@
+[run]
+branch = True
+source =
+    workout
+
+[paths]
+source =
+   src/workout
+   .tox/*/lib/python*/site-packages/workout
+   .tox/pypy/site-packages/workout
+
+[report]
+show_missing = True

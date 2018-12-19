@@ -8,10 +8,12 @@ install:
 help:
 	echo "requirements - Update requirements.txt when setup.py changes"
 
-requirements: requirements.txt
+requirements: requirements.txt dev-requirements.txt
 
 requirements.txt: setup.py
 	CUSTOM_COMPILE_COMMAND="make requirements" pip-compile --generate-hashes
+
+dev-requirements.txt: dev-requirements.in
 	CUSTOM_COMPILE_COMMAND="make requirements" pip-compile dev-requirements.in --generate-hashes
 
 upgrade:

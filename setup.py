@@ -1,27 +1,21 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding='utf-8') as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="git-workout",
     version="0.0.0",
-    packages=find_packages('src'),
-    package_dir={'': 'src'},
-    install_requires=[
-        "Click ~= 7.0",
-        "gitpython ~= 2.1.11",
-    ],
+    packages=find_packages("src"),
+    package_dir={"": "src"},
+    install_requires=["Click ~= 7.0", "gitpython ~= 2.1.11"],
     python_requires=">=3.6",
-
-    entry_points='''
+    entry_points="""
         [console_scripts]
         git-workout=workout:main
-    ''',
-
+    """,
     author="Mark Smith",
     author_email="judy@judy.co.uk",
-
     description="Prove that you only work on your own stuff out of hours.",
     long_description=long_description,
     long_description_content_type="text/markdown",

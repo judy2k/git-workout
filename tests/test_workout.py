@@ -2,4 +2,4 @@ import workout
 
 
 def test_workout():
-    assert True
+    assert workout.main is not None
