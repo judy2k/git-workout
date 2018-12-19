@@ -1,5 +1,8 @@
 # Git Workout
 
+[![Build Status](https://travis-ci.com/judy2k/git-workout.svg?branch=master)](https://travis-ci.com/judy2k/git-workout)
+[![codecov](https://codecov.io/gh/judy2k/git-workout/branch/master/graph/badge.svg)](https://codecov.io/gh/judy2k/git-workout)
+
 A git plugin to shift your commits out of work hours.
 
 Of _course_ you're a responsible developer, and you never work on your own stuff during working hours. You _never_ get that craving to just throw something together late on a Friday afternoon.
