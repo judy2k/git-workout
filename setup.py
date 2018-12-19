@@ -1,11 +1,12 @@
 from setuptools import setup, find_packages
+import versioneer
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="git-workout",
-    version="0.0.0",
+    version=versioneer.get_version(),
     packages=find_packages("src"),
     package_dir={"": "src"},
     install_requires=["Click ~= 7.0", "gitpython ~= 2.1.11"],
@@ -26,4 +27,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+
+  cmdclass=versioneer.get_cmdclass(),
 )
