@@ -1,0 +1,55 @@
+dist: xenial
+group: travis_latest
+sudo: false
+cache:
+  directories:
+    - $HOME/.cache/pip
+
+language: python
+
+
+matrix:
+  fast_finish: true
+
+  include:
+    # lint
+    - python: "3.7"
+      stage: lint
+      env: TOXENV=lint
+    - python: "3.7"
+      env: TOXENV=manifest
+    - python: "3.7"
+      env: TOXENV=typing
+
+    - python: "3.6"
+      env: TOXENV=py36
+    - python: "3.7"
+      env: TOXENV=py37
+
+    # Prevent breakage by new releases
+    - python: "3.7-dev"
+      env: TOXENV=py37
+
+  allow_failures:
+    - python: "3.7-dev"
+
+
+install:
+  - pip install tox
+
+
+script:
+  - tox
+
+
+before_install:
+  - pip install codecov
+
+
+after_success:
+  - tox -e coverage-report
+  - codecov
+
+
+notifications:
+  email: false
