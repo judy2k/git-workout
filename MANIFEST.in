@@ -1,0 +1,8 @@
+include *requirements.in
+include pyproject.toml
+include *requirements.txt
+include .pre-commit-config.yaml
+include LICENSE
+include Makefile
+include tox.ini
+recursive-include tests *.py
