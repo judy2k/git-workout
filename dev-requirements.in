@@ -1,7 +1,8 @@
 black
 check-manifest
 flake8
-#pylint
+mypy
+# pylint
 pytest
 pytest-cov
 tox
