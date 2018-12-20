@@ -21,6 +21,10 @@ upgrade:
 	CUSTOM_COMPILE_COMMAND="make requirements" pip-compile dev-requirements.in --generate-hashes --upgrade
 
 package:
-	pip wheel --wheel-dir wheels --no-deps .
+	pip wheel --wheel-dir dist --no-deps .
+	python setup.py sdist
 
-.PHONY: all help install package requirements upgrade
+clean:
+	rm -rf build dist
+
+.PHONY: all clean help install package requirements upgrade
