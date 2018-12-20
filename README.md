@@ -5,6 +5,8 @@
 
 A git plugin to shift your commits out of work hours.
 
+__Or at least it will be.__ Currently this command just prints "Hello, World."
+
 Of _course_ you're a responsible developer, and you never work on your own stuff during working hours. You _never_ get that craving to just throw something together late on a Friday afternoon.
 But imagine you _did_ - you couldn't publish your git repo, because you committed during working hours!
 
