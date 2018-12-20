@@ -1,5 +1,10 @@
 from setuptools import setup, find_packages
+import sys
+
+# This appears to be necessary so that versioneer works:
+sys.path.insert(0, ".")  # noqa
 import versioneer
+
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -9,7 +14,11 @@ setup(
     version=versioneer.get_version(),
     packages=find_packages("src"),
     package_dir={"": "src"},
-    install_requires=["Click ~= 7.0", "gitpython ~= 2.1.11"],
+    install_requires=[
+        "Click ~= 7.0",
+        "gitpython ~= 2.1.11",
+        "arrow ~= 0.12.1",
+    ],
     python_requires=">=3.6",
     entry_points="""
         [console_scripts]
