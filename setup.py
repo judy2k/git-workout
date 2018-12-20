@@ -27,6 +27,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-
-  cmdclass=versioneer.get_cmdclass(),
+    cmdclass=versioneer.get_cmdclass(),
 )

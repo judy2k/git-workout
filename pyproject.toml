@@ -3,3 +3,9 @@ requires = ["setuptools", "wheel"]
 
 [tool.black]
 line-length = 79
+exclude = '''
+/(
+    versioneer\.py
+    | _version.py
+)/
+'''
