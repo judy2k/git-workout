@@ -14,4 +14,4 @@ def test_repo_fixture(temp_repo):
         print(c.committed_datetime, c.hexsha[:7], c.message)
     print(temp_repo.tags)
     print(temp_repo.tags["a-tag"].commit.hexsha[:7])
-    assert False
+    assert True
