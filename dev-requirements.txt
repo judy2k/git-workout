@@ -16,9 +16,9 @@ attrs==18.2.0 \
     --hash=sha256:10cbf6e27dbce8c30807caf056c8eb50917e0eaafe86347671b57254006c3e69 \
     --hash=sha256:ca4be454458f9dec299268d472aaa5a11f67a4ff70093396e1ceae9c76cf4bbb \
     # via black, pytest
-black==18.9b0 \
-    --hash=sha256:817243426042db1d36617910df579a54f1afd659adb96fc5032fcf4b36209739 \
-    --hash=sha256:e030a9a28f542debc08acceb273f228ac422798e5215ba2a791a6ddeaaca22a5
+black==19.3b0 \
+    --hash=sha256:09a9dcb7c46ed496a9850b76e4e825d6049ecd38b611f1224857a79bd985a8cf \
+    --hash=sha256:68950ffd4d9169716bcb8719a56c07a2f4485354fec061cdd5910aa07369731c
 bleach==3.0.2 \
     --hash=sha256:48d39675b80a75f6d1c3bdbffec791cf0bbbab665cf01e20da701c77de278718 \
     --hash=sha256:73d26f018af5d5adcdabf5c1c974add4361a9c76af215fe32fdec8a6fc5fb9b9 \
@@ -186,9 +186,9 @@ typed-ast==1.1.1 \
     --hash=sha256:f741ba03feb480061ab91a465d1a3ed2d40b52822ada5b4017770dfcb88f839f \
     --hash=sha256:fe800a58547dd424cd286b7270b967b5b3316b993d86453ede184a17b5a6b17d \
     # via mypy
-urllib3==1.24.1 \
-    --hash=sha256:61bf29cada3fc2fbefad4fdf059ea4bd1b4a86d2b6d15e1c7c0b582b9752fe39 \
-    --hash=sha256:de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22 \
+urllib3==1.24.2 \
+    --hash=sha256:4c291ca23bbb55c76518905869ef34bdd5f0e46af7afe6861e8375643ffee1a0 \
+    --hash=sha256:9a247273df709c4fedb38c711e44292304f73f39ab01beda9f6b9fc375669ac3 \
     # via requests
 virtualenv==16.1.0 \
     --hash=sha256:686176c23a538ecc56d27ed9d5217abd34644823d6391cbeb232f42bf722baad \
