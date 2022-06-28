@@ -4,8 +4,9 @@
 #
 #    make requirements
 #
-arrow==0.12.1 \
-    --hash=sha256:a558d3b7b6ce7ffc74206a86c147052de23d3d4ef0e17c210dd478c53575c4cd
+arrow==0.15.1 \
+    --hash=sha256:7954440e7621629a3e4c30dfd2038362d153e1e2b50424c7a6f10e1cdf211a7b \
+    --hash=sha256:c65ea9214403c77b09bd676cba3dcf1e0a396f5dfb316b811bb7f7e10d99e955
 click==7.0 \
     --hash=sha256:2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13 \
     --hash=sha256:5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7
